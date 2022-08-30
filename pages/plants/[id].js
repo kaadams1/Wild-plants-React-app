@@ -21,6 +21,16 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-    const plant = plants.find(plant => plant.id === params.plant)
-    return { props: { plant }}
+    console.log(params) // { id: '1' }
+
+    const plant = plants.find(plant => plant.id === Number(params.id));
+
+    console.log(typeof plants) // object
+    plants.forEach(plant => { console.log(plant.id, params.id, typeof plant.id, typeof params.id) })
+
+    console.log(plant) // undefined
+
+    return { 
+        props: { plant }
+    }
 }
