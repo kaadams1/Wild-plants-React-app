@@ -9,6 +9,10 @@ a {
   color: #333;
   text-decoration: none;
 }
+
+h1 {
+  margin-top: 11px;
+}
 .content {
   max-width: 960px;
   margin: 0 auto;
@@ -19,7 +23,7 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #333;
 }
 nav a {
   margin-left: 12px;
@@ -33,7 +37,7 @@ footer {
   padding: 30px 0;
   margin-top: 60px;
   color: #777;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid #333;
 }
 
 .not-found {
@@ -44,3 +48,8 @@ footer {
   color: #4979ff;
   text-decoration: underline;
 }
+
+.about-meadow {
+  width: 900px;
+}
+
